@@ -15,8 +15,16 @@
 
 }
 
+.green-text{
+  color: rgb(0, 239, 85);
+  font-weight: bold;
+  font-family: "Gotham";
+  font-size: 10pt;
+  top: 20vh;
+}
+
 .gradient {
-  background: $gradient;
+  // background: $gradient;
   position: absolute;
   top: 0;
   left: 0;
@@ -24,7 +32,7 @@
   height: 100%;
   h3{
     color: white;
-    font-size: 35px;
+    font-size: 24pt;
     // font-weight: bold;
     letter-spacing: 0px;
     // font-variant: extended;
