@@ -8,9 +8,9 @@
   position: relative;
 
   background: url("wah.jpg");
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
   // background-attachment: fixed;
-  background-position: 0px -150px;
+  background-position: 0px 0px;
   background-size: cover;
 
 }
@@ -21,6 +21,16 @@
   font-family: "Gotham";
   font-size: 10pt;
   top: 20vh;
+}
+
+.sign-up-arrow{
+  color: rgb(0, 239, 85);
+  font-size: 20px;
+}
+
+.sign-up-button{
+  background: transparent;
+  border: 0 solid;
 }
 
 .gradient {
@@ -45,5 +55,25 @@
 
 .sign-up-form{
   top: 40vh;
-  font-family: "Gotham"
+  font-family: "Gotham";
+
+  input{
+    border-radius: 7px;
+  }
+}
+
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
+}
+
+input::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+}
+
+input:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+  color: black;
 }
