@@ -42,6 +42,7 @@
   </div>
 </div>
 
+<!-- How does it work? -->
 <div class="scroll-page" id="how-does-it-work">
   <div class="container">
     <div class="row">
@@ -61,6 +62,133 @@
         <p>
           We know you’re an individual with your own taste and style, and we know you’re creative, thats why you’re in the beauty business, obvs. So we give you some customisable templates, fun animations and make it super responsive across mobile applications.
         </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Then What? -->
+<div class="scroll-page" id="then-what">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xs-4 col-xs-offset-4 text-center title">
+        <h4 class="green-text">THEN WHAT?</h4>
+      </div>
+
+      <div class="col-xs-8 col-xs-offset-1 brief">
+        <h3>2</h3>
+        <h3>
+          Your clients book on your site via your social style imagery.
+        </h3>
+      </div>
+
+      <div class="col-xs-8 col-xs-offset-1 brief">
+        <p>
+          Uploading a bunch of pics of your work and getting a like or a reblog is fun right?! You know whats more fun? Money. You take cash money bookings via your images NOT just a list of treatments, because your clients come in with 1000 screenshots of pics anyway…
+        </p>
+      </div>
+      <div class="col-xs-8 col-xs-offset-1">
+        <p class="green-text">Why didn’t anyone think of this before?! Yeah, we asked ourselves the same thing….</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- OH DAAAAMN! -->
+<div class="scroll-page" id="oh-daaaamn">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xs-4 col-xs-offset-4 text-center title">
+        <h4 class="green-text">OH DAAAAMN!</h4>
+      </div>
+
+      <div class="col-xs-8 col-xs-offset-1 brief">
+        <h3>3</h3>
+        <h3>
+          Money in the bank (Shorty what you drank?) Appointments in your calendar. Job done.
+        </h3>
+      </div>
+
+      <div class="col-xs-8 col-xs-offset-1 brief">
+        <p>
+          We attach the style pics to the bookings so you feel fully informed about your client before they arrive. Most importantly, we cut out a lot of customer friction in choosing their beauty service. Tired of sending 5 emails back and forth to confirm exactly what colour/art/style they want in their appointment? So are we.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- WANNA GET DOWN? -->
+<div class="scroll-page" id="wanna-get-down">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xs-4 col-xs-offset-4 text-center title">
+        <h4 class="green-text">OH DAAAAMN!</h4>
+      </div>
+
+      <div class="col-xs-9 col-xs-offset-1 brief">
+        <h3>It’s probably gonna work for you</h3>
+        <p style="font-size: 20pt;">
+          <i class="fa fa-square" aria-hidden="true"></i> you are a sole practitioner doing beauty treatments <br>
+          <i class="fa fa-square" aria-hidden="true"></i> operate from a rented chair or from your bedroom/studio/shed <br>
+          <i class="fa fa-square" aria-hidden="true"></i> love taking pictures of your work <br>
+          <i class="fa fa-square" aria-hidden="true"></i> don’t use an existing scheduling system <br>
+          <i class="fa fa-square" aria-hidden="true"></i> mainly get discovered by new clients on social. <br>
+          </ul>
+        </p>
+      </div>
+
+      <div class="col-xs-8 col-xs-offset-2 text-center">
+        <p class="green-text">DON’T WORRY, FULL SALON SOLUTIONS AND THE WHOLE SUPER SMART SCHEDULING SYSTEM THAT YOU’VE ALWAYS DREAMED OF WILL COME IN TIME. THIS IS JUST THE FIRST STEP.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- SO WOULD THIS SOLVE ALL YOUR BOOKING WOES? -->
+<div class="scroll-page" id="booking-woes">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xs-6 col-xs-offset-3 text-center title">
+        <h4 class="green-text">SO WOULD THIS SOLVE ALL YOUR BOOKING WOES?</h4>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 brief">
+        <h3>if you wanna be an early user, be part of the gang and give us regular feedback, then please request an invite below</h3>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 sign-up-form form-inline text-center">
+
+        <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= f.error_notification %>
+
+        <div class="form-group">
+          <%= f.input :name, required: true, autofocus: true, label: false, placeholder: "NAME" %>
+          <%= f.input :email, required: true, label: false, placeholder: "EMAIL" %>
+          <%= f.input :instahandle, required: true, label: false, placeholder: "INSTAGRAM HANDLE" %>
+          <%# f.input :password, required: true, label: false, placeholder: "password", hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
+          <%# f.input :password_confirmation, required: true, label: false, placeholder: "password confirmation" %>
+        </div>
+
+        <div class="form-group">
+          <%# f.button :submit, "Sign up" %>
+          <button type="submit" name="commit" class="sign-up-button">
+            <span class="sign-up-arrow">
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+
+        <% end %>
+
       </div>
 
     </div>
