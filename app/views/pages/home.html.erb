@@ -3,7 +3,7 @@
     <div class="row">
 
       <div class="col-xs-4 col-xs-offset-4 text-center title">
-        <a class="page-link" href="<%= root_path %>#hello">
+        <a class="page-link" href="#">
           <h4 class="green-text">HELLO!</h4>
         </a>
       </div>
@@ -26,7 +26,7 @@
     <div class="row">
 
       <div class="col-xs-4 col-xs-offset-4 text-center title">
-        <a class="page-link" href="<%= root_path %>#how-does-it-work">
+        <a class="page-link" href="#">
           <h4 class="green-text">HOW DOES IT WORK?</h4>
         </a>
       </div>
@@ -54,7 +54,7 @@
     <div class="row">
 
       <div class="col-xs-4 col-xs-offset-4 text-center title">
-        <a class="page-link" href="<%= root_path %>#then-what">
+        <a class="page-link" href="#">
           <h4 class="green-text">THEN WHAT?</h4>
         </a>
       </div>
@@ -85,7 +85,7 @@
     <div class="row">
 
       <div class="col-xs-4 col-xs-offset-4 text-center title">
-        <a class="page-link" href="<%= root_path %>#oh-daaaamn">
+        <a class="page-link" href="#">
           <h4 class="green-text">OH DAAAAMN!</h4>
         </a>
       </div>
@@ -113,7 +113,7 @@
     <div class="row">
 
       <div class="col-xs-4 col-xs-offset-4 text-center title">
-        <a class="page-link" href="<%= root_path %>#wanna-get-down">
+        <a class="page-link" href="#">
           <h4 class="green-text">WANNA GET DOWN?</h4>
         </a>
       </div>
@@ -130,7 +130,7 @@
         </p>
       </div>
 
-      <div class="col-xs-8 col-xs-offset-2 text-center">
+      <div class="col-xs-8 col-xs-offset-2 text-center" style="margin-top: 40px;">
         <p class="green-text">DON’T WORRY, FULL SALON SOLUTIONS AND THE WHOLE SUPER SMART SCHEDULING SYSTEM THAT YOU’VE ALWAYS DREAMED OF WILL COME IN TIME. THIS IS JUST THE FIRST STEP.</p>
       </div>
 
@@ -144,7 +144,7 @@
     <div class="row">
 
       <div class="col-xs-6 col-xs-offset-3 text-center title">
-        <a class="page-link" href="<%= root_path %>#booking-woes">
+        <a class="page-link" href="#">
           <h4 class="green-text">SO WOULD THIS SOLVE ALL YOUR BOOKING WOES?</h4>
         </a>
       </div>
@@ -158,4 +158,48 @@
     </div>
   </div>
 </div>
+
+<% content_for(:after_js) do %>
+  <script>
+
+  var scrollSpeed = 500;
+
+  $("#hello").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#hello").offset().top
+    }, scrollSpeed);
+  });
+
+  $("#how-does-it-work").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#how-does-it-work").offset().top
+    }, scrollSpeed);
+  });
+
+  $("#then-what").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#then-what").offset().top
+    }, scrollSpeed);
+  });
+
+  $("#oh-daaaamn").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#oh-daaaamn").offset().top
+    }, scrollSpeed);
+  });
+
+  $("#wanna-get-down").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#wanna-get-down").offset().top
+    }, scrollSpeed);
+  });
+
+  $("#booking-woes").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#booking-woes").offset().top
+    }, scrollSpeed);
+  });
+
+  </script>
+<% end %>
 

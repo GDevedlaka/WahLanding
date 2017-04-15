@@ -13,8 +13,11 @@
   background-position: 0px 0px;
   background-size: cover;
 
-  .page-link:hover {
+  .page-link {
     text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
   }
 }
 
