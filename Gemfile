@@ -19,6 +19,9 @@ gem 'autoprefixer-rails'
 
 gem 'rails_12factor', group: :production
 
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', '>= 1.0.0.rc'
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
