@@ -4,7 +4,7 @@
  * ------------------------------------- */
 
 .scroll-page{
-  height: 100vh;
+  height: 80vh;
   // position: relative;
 
   background: url("wah.jpg");
@@ -12,6 +12,10 @@
   background-attachment: fixed;
   background-position: 0px 0px;
   background-size: cover;
+
+  .page-link:hover {
+    text-decoration: none;
+  }
 }
 
 .green-text{
