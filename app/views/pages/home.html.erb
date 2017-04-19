@@ -89,28 +89,7 @@
   </div>
 </div>
 
-<!-- Nav-menu -->
-<div class="container">
-  <div class="row">
-      <div class="col-xs-3">
-
-        <div class="panel nav-menu">
-          <div class="panel-header nav-menu-head">
-            <h4 class="white-text">
-              <i class="fa fa-bars" aria-hidden="true"></i>
-            </h4>
-          </div>
-          <div class="panel-body nav-menu-body hide-me" style="display: none;">
-            <dl>
-              <span class='page-link hello-link'><p class="green-text">Hello</p></span>
-              <span class='page-link join-the-crew-link'><p class="green-text">Join The Crew</p></span>
-            </dl>
-          </div>
-        </div>
-
-      </div>
-    </div>
-</div>
+<%= render 'nav-menu' %>
 
 <% content_for(:after_js) do %>
 <script>

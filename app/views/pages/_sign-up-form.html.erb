@@ -2,8 +2,11 @@
 
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Thanks! We'll be in touch!</p>
+    <!-- <span class="close">&times;</span> -->
+    <p class="text-center" style="font-weight: bold;">thank you</p>
+    <p class="text-center">HANG TIGHT! WE’LL GET IN TOUCH WITH MORE DETAILS ON OUR LAUNCH. KNOW ANY OTHER BEAUTY BOSSES THAT MIGHT BENEFIT FROM BUILDING THEIR OWN SITE? REFER A FRIEND AND EARN CREDIT TOWARDS YOUR ACCOUNT.</p>
+    <div class="emails"><input placeholder="Friends Email" type="text"><br></div>
+    <i style="font-size: 28px; color: white;" class="fa fa-plus-square" aria-hidden="true"></i>
   </div>
 
 </div>
@@ -31,3 +34,15 @@
   <% end %>
 
 </div>
+
+<%= content_for :modal do %>
+  <script>
+    $(document).ready(function(){
+      $('.fa-plus-square').click(function(){
+        $('.emails').append("<input placeholder='Friends Email' type='text'> <span style='font-size: 28px; color: white;'><i class='fa fa-minus-square'></i></span> <br>");
+
+      });
+
+    });
+  </script>
+<% end %>
