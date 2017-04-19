@@ -1,9 +1,7 @@
-<%= render 'nav-menu' %>
 <div class="scroll-page" id="hello">
   <div class="container">
+    <%= render 'nav-menu' %>
     <div class="row">
-
-      <div class="vertical-center">
 
         <div class="col-xs-4 col-xs-offset-4 text-center title">
           <a class="page-link" href="#hello">
@@ -21,11 +19,9 @@
             With WAHStyle tools, beauty professionals can now monetize their social content by turning posts into bookings. Automate the consultation process, take payment in advance and know what your client wants, before they walk through the door.
           </p>
           <div class="sign-up-position col-xs-12">
-            <%= link_to 'REQUEST FREE EARLY ACCESS','#', class: "btn btn-primary sign-up"  %>
+            <%= link_to 'REQUEST FREE EARLY ACCESS','#', class: "btn btn-primary sign-up waitlist-link"  %>
           </div>
         </div>
-
-      </div>
 
     </div>
   </div>
@@ -43,103 +39,13 @@
   </div>
 </div>
 
-<!-- How does it work? -->
-<div class="scroll-page" id="how-does-it-work">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-xs-4 col-xs-offset-4 text-center title">
-        <a class="page-link" href="#how-does-it-work">
-          <h4 class="green-text">HOW DOES IT WORK?</h4>
-        </a>
-      </div>
-
-      <div class="col-xs-8 col-xs-offset-1 brief">
-        <h3>1</h3>
-        <h3>
-          You build your site using our tools. Not a page in the exact same format as everyone else.
-        </h3>
-      </div>
-
-      <div class="col-xs-8 col-xs-offset-1 brief">
-        <p>
-          We know you’re an individual with your own taste and style, and we know you’re creative, thats why you’re in the beauty business, obvs. So we give you some customisable templates, fun animations and make it super responsive across mobile applications.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- Then What? -->
-<div class="scroll-page" id="then-what">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-xs-4 col-xs-offset-4 text-center title">
-        <a class="page-link" href="#then-what">
-          <h4 class="green-text">THEN WHAT?</h4>
-        </a>
-      </div>
-
-      <div class="col-xs-8 col-xs-offset-1 brief">
-        <h3>2</h3>
-        <h3>
-          Your clients book on your site via your social style imagery.
-        </h3>
-      </div>
-
-      <div class="col-xs-8 col-xs-offset-1 brief">
-        <p>
-          Uploading a bunch of pics of your work and getting a like or a reblog is fun right?! You know whats more fun? Money. You take cash money bookings via your images NOT just a list of treatments, because your clients come in with 1000 screenshots of pics anyway…
-        </p>
-      </div>
-      <div class="col-xs-8 col-xs-offset-1">
-        <p class="green-text">Why didn’t anyone think of this before?! Yeah, we asked ourselves the same thing….</p>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- OH DAAAAMN! -->
-<div class="scroll-page" id="oh-daaaamn">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-xs-4 col-xs-offset-4 text-center title">
-        <a class="page-link" href="#oh-daaaamn">
-          <h4 class="green-text">OH DAAAAMN!</h4>
-        </a>
-      </div>
-
-      <div class="col-xs-8 col-xs-offset-1 brief">
-        <h3>3</h3>
-        <h3>
-          Money in the bank (Shorty what you drank?) Appointments in your calendar.
-        </h3>
-        <h3>
-          Job done.
-        </h3>
-      </div>
-
-      <div class="col-xs-8 col-xs-offset-1 brief">
-        <p>
-          We attach the style pics to the bookings so you feel fully informed about your client before they arrive. Most importantly, we cut out a lot of customer friction in choosing their beauty service. Tired of sending 5 emails back and forth to confirm exactly what colour/art/style they want in their appointment? So are we.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</div>
-
 <!-- WANNA GET DOWN? -->
-<div class="scroll-page" id="wanna-get-down">
+<!-- <div class="scroll-page" id="wanna-get-down">
   <div class="container">
     <div class="row">
 
       <div class="col-xs-4 col-xs-offset-4 text-center title">
-        <a class="page-link" href="#wanna-get-down">
+        <a class="page-link" href="#">
           <h4 class="green-text">WANNA GET DOWN?</h4>
         </a>
       </div>
@@ -162,25 +68,24 @@
 
   </div>
 </div>
-</div>
+</div> -->
 
 <!-- SO WOULD THIS SOLVE ALL YOUR BOOKING WOES? -->
-<div class="scroll-page" id="booking-woes">
+<div class="scroll-page" id="waitlist">
   <div class="container">
     <div class="row">
 
       <div class="col-xs-6 col-xs-offset-3 text-center title">
-        <a class="page-link" href="#booking-woes">
-          <h4 class="green-text">SO WOULD THIS SOLVE ALL YOUR BOOKING WOES?</h4>
+        <a class="page-link" href="#">
+          <h4 class="green-text">JOIN THE CREW</h4>
         </a>
       </div>
 
       <div class="col-xs-10 col-xs-offset-1 brief">
-        <h3>if you wanna be an early user, be part of the gang and give us regular feedback, then please request an invite below</h3>
-        <div class="sign-up-position col-xs-12">
-          <%= link_to 'REQUEST FREE EARLY ACCESS','#', class: "btn btn-primary sign-up"  %>
-        </div>
+        <h3>If you want to optimize your appointment book and make your social images work harder for you, then request free early access to join our closed beta.</h3>
       </div>
+
+      <%= render 'sign-up-form' %>
 
 
     </div>
@@ -190,6 +95,11 @@
 <% content_for(:after_js) do %>
   <script>
     $(document).ready(function(){
+
+      // var input = document.querySelectorAll('input');
+      // for(i=0; i<input.length; i++){
+      //   input[i].setAttribute('size',input[i].getAttribute('placeholder').length);
+      // }
 
       var scrollSpeed = 500;
 
@@ -224,9 +134,9 @@
         }, scrollSpeed);
       });
 
-      $(".booking-woes-link").click(function() {
+      $(".waitlist-link").click(function() {
         $('body').animate({
-          scrollTop: $("#booking-woes").offset().top
+          scrollTop: $("#waitlist").offset().top
         }, scrollSpeed);
       });
 

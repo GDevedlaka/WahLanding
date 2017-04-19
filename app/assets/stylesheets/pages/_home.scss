@@ -3,17 +3,13 @@
  * (margin/padding adjustments)
  * ------------------------------------- */
 
-.vertical-center{
-
-}
 
 .scroll-page{
   height: 100vh;
-  // position: relative;
+  position: relative;
 
   background: url("wah.jpg");
   background-repeat: no-repeat;
-  // background-attachment: fixed;
   background-position: 0px 0px;
   background-size: cover;
 
@@ -26,11 +22,16 @@
 
 }
 
+#hello{
+  height: 80vh;
+}
+
 .sign-up{
   padding: 12px;
   border-radius: 6px;
   color: black;
   font-family: "Gotham";
+  font-weight: bold;
   font-size: 14px;
 
   &:link{
@@ -53,7 +54,7 @@
 
 .sign-up-position{
   padding: 0;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 .green-text{
@@ -79,12 +80,11 @@
     font-size: 24pt;
     // font-weight: bold;
     letter-spacing: 0px;
-    // font-variant: extended;
   }
   p{
     color: white;
     font-size: 14pt;
-    letter-spacing: 0px;
+    letter-spacing: 2px;
   }
   .fa-square{
     font-size: 10px;
@@ -93,6 +93,7 @@
 
 .sign-up-form{
   font-family: "Gotham";
+  font-weight: bold;
   margin-top: 5vh;
 
   .sign-up-arrow{
@@ -107,6 +108,7 @@
 
   input{
     border-radius: 7px;
+    font-size: 12px;
   }
 }
 
