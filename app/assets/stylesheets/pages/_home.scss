@@ -9,7 +9,7 @@
 
   background: url("wah.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  // background-attachment: fixed;
   background-position: 0px 0px;
   background-size: cover;
 
@@ -68,6 +68,10 @@
   input{
     border-radius: 7px;
   }
+}
+
+#how-does-it-work{
+  background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
 }
 
 input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
