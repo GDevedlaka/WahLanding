@@ -1,12 +1,10 @@
+<!-- <%# render 'nav-menu' %> -->
 <div class="scroll-page" id="hello">
   <div class="container">
-    <%= render 'nav-menu' %>
     <div class="row">
 
         <div class="col-xs-4 col-xs-offset-4 text-center title">
-          <a class="page-link" href="#hello">
-            <h4 class="green-text">HELLO!</h4>
-          </a>
+          <h4 class="green-text">HELLO!</h4>
         </div>
 
         <div class="col-xs-10 col-xs-offset-1 brief">
@@ -19,7 +17,7 @@
             With WAHStyle tools, beauty professionals can now monetize their social content by turning posts into bookings. Automate the consultation process, take payment in advance and know what your client wants, before they walk through the door.
           </p>
           <div class="sign-up-position col-xs-12">
-            <%= link_to 'REQUEST FREE EARLY ACCESS','#', class: "btn btn-primary sign-up waitlist-link"  %>
+            <%= link_to 'REQUEST FREE EARLY ACCESS','#', class: "btn btn-primary sign-up join-the-crew-link"  %>
           </div>
         </div>
 
@@ -71,14 +69,12 @@
 </div> -->
 
 <!-- SO WOULD THIS SOLVE ALL YOUR BOOKING WOES? -->
-<div class="scroll-page" id="waitlist">
+<div class="scroll-page" id="join-the-crew">
   <div class="container">
     <div class="row">
 
       <div class="col-xs-6 col-xs-offset-3 text-center title">
-        <a class="page-link" href="#">
-          <h4 class="green-text">JOIN THE CREW</h4>
-        </a>
+        <h4 class="green-text">JOIN THE CREW</h4>
       </div>
 
       <div class="col-xs-10 col-xs-offset-1 brief">
@@ -134,9 +130,9 @@
         }, scrollSpeed);
       });
 
-      $(".waitlist-link").click(function() {
+      $(".join-the-crew-link").click(function() {
         $('body').animate({
-          scrollTop: $("#waitlist").offset().top
+          scrollTop: $("#join-the-crew").offset().top
         }, scrollSpeed);
       });
 
