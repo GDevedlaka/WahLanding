@@ -3,13 +3,13 @@
  * (margin/padding adjustments)
  * ------------------------------------- */
 
+
 .scroll-page{
   height: 100vh;
-  // position: relative;
+  position: relative;
 
   background: url("wah.jpg");
   background-repeat: no-repeat;
-  // background-attachment: fixed;
   background-position: 0px 0px;
   background-size: cover;
 
@@ -17,8 +17,60 @@
     text-decoration: none;
     &:hover{
       text-decoration: none;
+      cursor: pointer;
     }
   }
+
+}
+
+#hello{
+  height: 80vh;
+  background: url("wah_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#carousel{
+  background: url("wah_2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#join-the-crew{
+  background: url("wah_3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sign-up{
+  padding: 12px;
+  border-radius: 6px;
+  color: black;
+  font-family: "Gotham";
+  font-weight: bold;
+  font-size: 14px;
+
+  &:link{
+    color:black;
+  }
+  &:visited{
+    color:black;
+  }
+  &:hover{
+    color:black;
+  }
+  &:focus{
+    color:black;
+  }
+  &:active{
+    color:black;
+  }
+
+}
+
+.sign-up-position{
+  padding: 0;
+  margin-top: 40px;
 }
 
 .green-text{
@@ -38,17 +90,17 @@
 }
 
 .brief{
+  margin-top: 10px;
   h2, h3{
     color: white;
     font-size: 24pt;
     // font-weight: bold;
     letter-spacing: 0px;
-    // font-variant: extended;
   }
   p{
     color: white;
     font-size: 14pt;
-    letter-spacing: 0px;
+    letter-spacing: 2px;
   }
   .fa-square{
     font-size: 10px;
@@ -57,6 +109,7 @@
 
 .sign-up-form{
   font-family: "Gotham";
+  font-weight: bold;
   margin-top: 5vh;
 
   .sign-up-arrow{
@@ -71,6 +124,7 @@
 
   input{
     border-radius: 7px;
+    font-size: 12px;
   }
 }
 
