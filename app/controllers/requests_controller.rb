@@ -4,8 +4,8 @@ class RequestsController < ApplicationController
     if @request.save
       # flash[:notice] = "Thank You! We'll be in touch!"
     else
-      flash[:alert] = "Please fill in all form fields!"
-      # redirect_to root_path
+      # flash[:alert] = "Please fill in all form fields!"
+      redirect_to root_path
     end
 
   end
