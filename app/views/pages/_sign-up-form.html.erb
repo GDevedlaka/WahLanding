@@ -1,4 +1,15 @@
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Thanks! We'll be in touch!</p>
+  </div>
+
+</div>
+
 <div class="col-xs-10 col-xs-offset-1 sign-up-form form-inline text-center">
+
 
   <%= simple_form_for(Request.new) do |f| %>
   <%= f.error_notification %>
@@ -10,8 +21,7 @@
   </div>
 
   <div class="form-group">
-    <%# f.button :submit, "Sign up" %>
-    <button type="submit" name="commit" class="sign-up-button">
+    <button id="request" type="submit" name="commit" class="sign-up-button">
       <span class="sign-up-arrow">
         <i class="fa fa-arrow-right" aria-hidden="true"></i>
       </span>
