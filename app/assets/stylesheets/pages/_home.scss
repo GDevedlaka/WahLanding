@@ -3,6 +3,10 @@
  * (margin/padding adjustments)
  * ------------------------------------- */
 
+.vertical-center{
+
+}
+
 .scroll-page{
   height: 100vh;
   // position: relative;
@@ -19,6 +23,7 @@
       text-decoration: none;
     }
   }
+
 }
 
 .sign-up{
@@ -26,6 +31,24 @@
   border-radius: 6px;
   color: black;
   font-family: "Gotham";
+  font-size: 14px;
+
+  &:link{
+    color:black;
+  }
+  &:visited{
+    color:black;
+  }
+  &:hover{
+    color:black;
+  }
+  &:focus{
+    color:black;
+  }
+  &:active{
+    color:black;
+  }
+
 }
 
 .sign-up-position{
@@ -50,6 +73,7 @@
 }
 
 .brief{
+  margin-top: 10px;
   h2, h3{
     color: white;
     font-size: 24pt;
