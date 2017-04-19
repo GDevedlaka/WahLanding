@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-  $('.nav-menu-head').click(function() {
-    $('.fa-chevron-down').toggleClass("down");
+  $('.nav-menu').hover(function() {
+    $('.fa-chevron-up').toggleClass("down");
 
     if($('.nav-menu-head').hasClass('open')){
       $('.nav-menu-body').slideUp( "fast", function() {});
