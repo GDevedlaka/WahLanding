@@ -1,0 +1,71 @@
+<div class="carousel">
+
+  <div>
+
+    <div class="text-center">
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+          <h4 class="green-text">A WEBSITE BUILDER JUST FOR BEAUTY PROS</h4>
+          <div class="brief">
+            <h3>Build your site using our tools</h3>
+            <p>
+              We know you have an individual taste and style, and we know you’re creative, thats why you’re in the beauty business, obvs. So we give you some customisable templates, fun animations and make it super responsive across mobile applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div>
+
+    <div class="text-center">
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+          <h4 class="green-text">MONETIZE YOUR SOCIAL CONTENT</h4>
+          <div class="brief">
+            <h3>Your clients book on your site via your social style imagery.</h3>
+            <p>
+              Uploading a bunch of pics of your work and getting a like or a pin is fun right?! You know what’s more fun? Money. You take cash money bookings via your images NOT just a list of treatments, because your clients come in with 100 screenshots of styles they like anyway...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div>
+
+    <div class="text-center">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h4 class="green-text">MANAGE YOUR CLIENT LIST</h4>
+          <div class="brief">
+            <h3>Money in the bank. Appointments in your calendar. Job done.</h3>
+            <p>
+              We attach the beauty style pics to the bookings in your schedule so you feel fully informed about your client before they arrive. Tired of sending 5 emails back and forth to confirm exactly what colour/art/style they want in their appointment? So are we.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+<%= content_for :carousel_js do %>
+<script>
+  $('.carousel').slick({
+    dots: true,
+    dotsClass: "carousel-dot",
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+  });
+</script>
+<% end %>

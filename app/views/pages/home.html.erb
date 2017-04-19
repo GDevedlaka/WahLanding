@@ -22,6 +22,18 @@
   </div>
 </div>
 
+<div class="scroll-page" id="carousel">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div style="margin-top: 25%;">
+          <%= render "carousel" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- How does it work? -->
 <div class="scroll-page" id="how-does-it-work">
   <div class="container">
@@ -170,38 +182,38 @@
 
       var scrollSpeed = 500;
 
-      $("#hello-link").click(function() {
+      $(".hello-link").click(function() {
         $('body').animate({
           scrollTop: $("#hello").offset().top
         }, scrollSpeed);
       });
 
-      $("#how-does-it-work-link").click(function() {
+      $(".how-does-it-work-link").click(function() {
         $('body').animate({
           scrollTop: $("#how-does-it-work").offset().top
       }, scrollSpeed);
 
       });
 
-      $("#then-what-link").click(function() {
+      $(".then-what-link").click(function() {
         $('body').animate({
           scrollTop: $("#then-what").offset().top
         }, scrollSpeed);
       });
 
-      $("#oh-daaaamn-link").click(function() {
+      $(".oh-daaaamn-link").click(function() {
         $('body').animate({
           scrollTop: $("#oh-daaaamn").offset().top
         }, scrollSpeed);
       });
 
-      $("#wanna-get-down-link").click(function() {
+      $(".wanna-get-down-link").click(function() {
         $('body').animate({
           scrollTop: $("#wanna-get-down").offset().top
         }, scrollSpeed);
       });
 
-      $("#booking-woes-link").click(function() {
+      $(".booking-woes-link").click(function() {
         $('body').animate({
           scrollTop: $("#booking-woes").offset().top
         }, scrollSpeed);
