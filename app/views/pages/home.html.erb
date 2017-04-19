@@ -163,44 +163,47 @@
 
 <% content_for(:after_js) do %>
   <script>
+    $(document).ready(function(){
 
-    var scrollSpeed = 500;
+      var scrollSpeed = 500;
 
-    $("#hello").click(function() {
-      $('html, body').animate({
-        scrollTop: $("#hello").offset().top
+      $("#hello-link").click(function() {
+        $('body').animate({
+          scrollTop: $("#hello").offset().top
+        }, scrollSpeed);
+      });
+
+      $("#how-does-it-work-link").click(function() {
+        $('body').animate({
+          scrollTop: $("#how-does-it-work").offset().top
       }, scrollSpeed);
-    });
 
-    $("#how-does-it-work").click(function() {
-      $('html, body').animate({
-        scrollTop: $("#how-does-it-work").offset().top
-    }, scrollSpeed);
+      });
 
-    });
+      $("#then-what-link").click(function() {
+        $('body').animate({
+          scrollTop: $("#then-what").offset().top
+        }, scrollSpeed);
+      });
 
-    $("#then-what").click(function() {
-      $('html, body').animate({
-        scrollTop: $("#then-what").offset().top
-      }, scrollSpeed);
-    });
+      $("#oh-daaaamn-link").click(function() {
+        $('body').animate({
+          scrollTop: $("#oh-daaaamn").offset().top
+        }, scrollSpeed);
+      });
 
-    $("#oh-daaaamn").click(function() {
-      $('html, body').animate({
-        scrollTop: $("#oh-daaaamn").offset().top
-      }, scrollSpeed);
-    });
+      $("#wanna-get-down-link").click(function() {
+        $('body').animate({
+          scrollTop: $("#wanna-get-down").offset().top
+        }, scrollSpeed);
+      });
 
-    $("#wanna-get-down").click(function() {
-      $('html, body').animate({
-        scrollTop: $("#wanna-get-down").offset().top
-      }, scrollSpeed);
-    });
+      $("#booking-woes-link").click(function() {
+        $('body').animate({
+          scrollTop: $("#booking-woes").offset().top
+        }, scrollSpeed);
+      });
 
-    $("#booking-woes").click(function() {
-      $('html, body').animate({
-        scrollTop: $("#booking-woes").offset().top
-      }, scrollSpeed);
     });
 
   </script>
