@@ -1,9 +1,11 @@
 <div class="scroll-page" id="hello">
   <div class="container">
+    <%= render 'nav-menu' %>
     <div class="row">
 
+
       <div class="col-xs-4 col-xs-offset-4 text-center title">
-        <a class="page-link" href="#">
+        <a class="page-link" href="#hello">
           <h4 class="green-text">HELLO!</h4>
         </a>
       </div>
@@ -26,7 +28,7 @@
     <div class="row">
 
       <div class="col-xs-4 col-xs-offset-4 text-center title">
-        <a class="page-link" href="#">
+        <a class="page-link" href="#how-does-it-work">
           <h4 class="green-text">HOW DOES IT WORK?</h4>
         </a>
       </div>
@@ -54,7 +56,7 @@
     <div class="row">
 
       <div class="col-xs-4 col-xs-offset-4 text-center title">
-        <a class="page-link" href="#">
+        <a class="page-link" href="#then-what">
           <h4 class="green-text">THEN WHAT?</h4>
         </a>
       </div>
@@ -85,7 +87,7 @@
     <div class="row">
 
       <div class="col-xs-4 col-xs-offset-4 text-center title">
-        <a class="page-link" href="#">
+        <a class="page-link" href="#oh-daaaamn">
           <h4 class="green-text">OH DAAAAMN!</h4>
         </a>
       </div>
@@ -93,7 +95,10 @@
       <div class="col-xs-8 col-xs-offset-1 brief">
         <h3>3</h3>
         <h3>
-          Money in the bank (Shorty what you drank?) Appointments in your calendar. Job done.
+          Money in the bank (Shorty what you drank?) Appointments in your calendar.
+        </h3>
+        <h3>
+          Job done.
         </h3>
       </div>
 
@@ -113,7 +118,7 @@
     <div class="row">
 
       <div class="col-xs-4 col-xs-offset-4 text-center title">
-        <a class="page-link" href="#">
+        <a class="page-link" href="#wanna-get-down">
           <h4 class="green-text">WANNA GET DOWN?</h4>
         </a>
       </div>
@@ -126,16 +131,16 @@
           <i class="fa fa-square" aria-hidden="true"></i> love taking pictures of your work <br>
           <i class="fa fa-square" aria-hidden="true"></i> don’t use an existing scheduling system <br>
           <i class="fa fa-square" aria-hidden="true"></i> mainly get discovered by new clients on social. <br>
-          </ul>
-        </p>
-      </div>
-
-      <div class="col-xs-8 col-xs-offset-2 text-center" style="margin-top: 40px;">
-        <p class="green-text">DON’T WORRY, FULL SALON SOLUTIONS AND THE WHOLE SUPER SMART SCHEDULING SYSTEM THAT YOU’VE ALWAYS DREAMED OF WILL COME IN TIME. THIS IS JUST THE FIRST STEP.</p>
-      </div>
-
+        </ul>
+      </p>
     </div>
+
+    <div class="col-xs-8 col-xs-offset-2 text-center" style="margin-top: 40px;">
+      <p class="green-text">DON’T WORRY, FULL SALON SOLUTIONS AND THE WHOLE SUPER SMART SCHEDULING SYSTEM THAT YOU’VE ALWAYS DREAMED OF WILL COME IN TIME. THIS IS JUST THE FIRST STEP.</p>
+    </div>
+
   </div>
+</div>
 </div>
 
 <!-- SO WOULD THIS SOLVE ALL YOUR BOOKING WOES? -->
@@ -144,7 +149,7 @@
     <div class="row">
 
       <div class="col-xs-6 col-xs-offset-3 text-center title">
-        <a class="page-link" href="#">
+        <a class="page-link" href="#booking-woes">
           <h4 class="green-text">SO WOULD THIS SOLVE ALL YOUR BOOKING WOES?</h4>
         </a>
       </div>
@@ -161,44 +166,48 @@
 
 <% content_for(:after_js) do %>
   <script>
+    $(document).ready(function(){
 
-  var scrollSpeed = 500;
+      var scrollSpeed = 500;
 
-  $("#hello").click(function() {
-    $('html, body').animate({
-      scrollTop: $("#hello").offset().top
-    }, scrollSpeed);
-  });
+      $("#hello-link").click(function() {
+        $('body').animate({
+          scrollTop: $("#hello").offset().top
+        }, scrollSpeed);
+      });
 
-  $("#how-does-it-work").click(function() {
-    $('html, body').animate({
-      scrollTop: $("#how-does-it-work").offset().top
-    }, scrollSpeed);
-  });
+      $("#how-does-it-work-link").click(function() {
+        $('body').animate({
+          scrollTop: $("#how-does-it-work").offset().top
+      }, scrollSpeed);
 
-  $("#then-what").click(function() {
-    $('html, body').animate({
-      scrollTop: $("#then-what").offset().top
-    }, scrollSpeed);
-  });
+      });
 
-  $("#oh-daaaamn").click(function() {
-    $('html, body').animate({
-      scrollTop: $("#oh-daaaamn").offset().top
-    }, scrollSpeed);
-  });
+      $("#then-what-link").click(function() {
+        $('body').animate({
+          scrollTop: $("#then-what").offset().top
+        }, scrollSpeed);
+      });
 
-  $("#wanna-get-down").click(function() {
-    $('html, body').animate({
-      scrollTop: $("#wanna-get-down").offset().top
-    }, scrollSpeed);
-  });
+      $("#oh-daaaamn-link").click(function() {
+        $('body').animate({
+          scrollTop: $("#oh-daaaamn").offset().top
+        }, scrollSpeed);
+      });
 
-  $("#booking-woes").click(function() {
-    $('html, body').animate({
-      scrollTop: $("#booking-woes").offset().top
-    }, scrollSpeed);
-  });
+      $("#wanna-get-down-link").click(function() {
+        $('body').animate({
+          scrollTop: $("#wanna-get-down").offset().top
+        }, scrollSpeed);
+      });
+
+      $("#booking-woes-link").click(function() {
+        $('body').animate({
+          scrollTop: $("#booking-woes").offset().top
+        }, scrollSpeed);
+      });
+
+    });
 
   </script>
 <% end %>
