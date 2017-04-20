@@ -1,128 +1,25 @@
-<!-- HELLO -->
 <div class="scroll-page" id="hello">
   <div class="container">
-
     <div class="row">
 
       <div class="col-xs-4 col-xs-offset-4 text-center title">
-        <h4 class="green-text">HELLO</h4>
+        <h4 class="green-text">ARE YOU A BEAUTY PRO?</h4>
       </div>
 
-      <div class="col-xs-10 col-xs-offset-1 brief">
+      <div class="col-xs-8 col-xs-offset-2 text-center brief">
         <h3>
-          build your website like a beauty pro
+          A new platform to create your ultimate salon website
         </h3>
-
       </div>
-      <div class="col-xs-10 col-xs-offset-1 brief">
+
+      <div class="col-xs-8 col-xs-offset-2 text-center brief">
         <p>
-          With our tools, you can now build your salon website and monetize your content by turning posts into bookings.
+          With our tools, you’ll build a stunning beauty blog and monetize your content by turning posts into appointment bookings.
         </p>
-        <div class="sign-up-position col-xs-12">
-          <%= link_to 'REQUEST FREE EARLY ACCESS','#', class: "btn btn-primary sign-up join-the-crew-link"  %>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<div class="scroll-page" id="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div style="margin-top: 25%;">
-          <%= render "carousel" %>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- WANNA GET DOWN? -->
-<!-- <div class="scroll-page" id="wanna-get-down">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-xs-4 col-xs-offset-4 text-center title">
-        <a class="page-link" href="#">
-          <h4 class="green-text">WANNA GET DOWN?</h4>
-        </a>
-      </div>
-
-      <div class="col-xs-9 col-xs-offset-1 brief">
-        <h3>It’s probably gonna work for you</h3>
-        <p style="font-size: 20pt;">
-          <i class="fa fa-square" aria-hidden="true"></i> you are a sole practitioner doing beauty treatments <br>
-          <i class="fa fa-square" aria-hidden="true"></i> operate from a rented chair or from your bedroom/studio/shed <br>
-          <i class="fa fa-square" aria-hidden="true"></i> love taking pictures of your work <br>
-          <i class="fa fa-square" aria-hidden="true"></i> don’t use an existing scheduling system <br>
-          <i class="fa fa-square" aria-hidden="true"></i> mainly get discovered by new clients on social. <br>
-        </ul>
-      </p>
-    </div>
-
-    <div class="col-xs-8 col-xs-offset-2 text-center" style="margin-top: 40px;">
-      <p class="green-text">DON’T WORRY, FULL SALON SOLUTIONS AND THE WHOLE SUPER SMART SCHEDULING SYSTEM THAT YOU’VE ALWAYS DREAMED OF WILL COME IN TIME. THIS IS JUST THE FIRST STEP.</p>
-    </div>
-
-  </div>
-</div>
-</div> -->
-
-<!-- JOIN THE CREW -->
-<div class="scroll-page" id="join-the-crew">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-xs-6 col-xs-offset-3 text-center title">
-        <h4 class="green-text">JOIN THE CREW</h4>
-      </div>
-
-      <div class="col-xs-10 col-xs-offset-1 brief">
-        <h3>If you want to optimize your appointment book and make your social images work harder for you, then request free early access to join our closed beta.</h3>
       </div>
 
       <%= render 'sign-up-form' %>
 
-
     </div>
   </div>
 </div>
-
-<%= render 'nav-menu' %>
-
-<% content_for(:after_js) do %>
-<script>
-  $(document).ready(function(){
-
-      // var input = document.querySelectorAll('input');
-      // for(i=0; i<input.length; i++){
-      //   input[i].setAttribute('size',input[i].getAttribute('placeholder').length);
-      // }
-
-      var scrollSpeed = 500;
-
-      $(".hello-link").click(function() {
-        $('body').animate({
-          scrollTop: $("#hello").offset().top
-        }, scrollSpeed);
-      });
-
-      $(".about-link").click(function() {
-        $('body').animate({
-          scrollTop: $("#about").offset().top
-        }, scrollSpeed);
-      });
-
-      $(".join-the-crew-link").click(function() {
-        $('body').animate({
-          scrollTop: $("#join-the-crew").offset().top
-        }, scrollSpeed);
-      });
-
-    });
-
-  </script>
-  <% end %>
-
