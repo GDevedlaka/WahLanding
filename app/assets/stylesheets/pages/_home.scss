@@ -8,7 +8,7 @@
   height: 100vh;
   position: relative;
 
-  background: url("wah.jpg");
+  background: url("wah_1.png");
   background-repeat: no-repeat;
   background-position: 0px 0px;
   background-size: cover;
@@ -22,56 +22,6 @@
 
 }
 
-#hello{
-  height: 80vh;
-  background: url("wah_1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#about{
-  background: url("wah_2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#join-the-crew{
-  background: url("wah_3.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.sign-up{
-  padding: 12px;
-  border-radius: 6px;
-  color: black;
-  font-family: "Gotham";
-  font-weight: bold;
-  font-size: 14px;
-
-  &:link{
-    color:black;
-  }
-  &:visited{
-    color:black;
-  }
-  &:hover{
-    color:black;
-  }
-  &:focus{
-    color:black;
-  }
-  &:active{
-    color:black;
-  }
-
-}
-
-.sign-up-position{
-  padding: 0;
-  margin-top: 40px;
-}
-
 .green-text{
   color: rgb(0, 239, 85);
   font-weight: bold;
@@ -80,26 +30,20 @@
   letter-spacing: 1px;
 }
 
-.white-text{
-  color: white;
-}
-
 .title{
   margin-top: 15vh;
 }
 
 .brief{
   margin-top: 10px;
+  color: white;
   h2, h3{
-    color: white;
-    font-size: 24pt;
-    // font-weight: bold;
+    font-size: 28pt;
     letter-spacing: 0px;
   }
   p{
-    color: white;
-    font-size: 14pt;
-    letter-spacing: 2px;
+    font-size: 18pt;
+    letter-spacing: 1px;
   }
   .fa-square{
     font-size: 10px;
@@ -111,20 +55,41 @@
   font-weight: bold;
   margin-top: 5vh;
 
-  .sign-up-arrow{
-    color: rgb(0, 239, 85);
-    font-size: 20px;
+  input{
+    border-radius: 0px;
+    font-size: 12px;
+    height: 7vh;
+  }
+
+  .sign-up-input{
+    margin-right: 10px;
+    width: 350px;
   }
 
   .sign-up-button{
-    background: transparent;
-    border: 0 solid;
+    padding: 12px;
+    color: black;
+    font-family: "Gotham";
+    font-weight: bold;
+    font-size: 14px;
+
+    &:link{
+      color:black;
+    }
+    &:visited{
+      color:black;
+    }
+    &:hover{
+      color:black;
+    }
+    &:focus{
+      color:black;
+    }
+    &:active{
+      color:black;
+    }
   }
 
-  input{
-    border-radius: 7px;
-    font-size: 12px;
-  }
 }
 
 #how-does-it-work{
