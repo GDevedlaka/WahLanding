@@ -6,6 +6,12 @@
   top: 20px;
   cursor: pointer;
   color: $green;
+  a{
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
+  }
 }
 
 .nav-bars{

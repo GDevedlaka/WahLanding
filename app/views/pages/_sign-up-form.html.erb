@@ -1,33 +1,37 @@
-<div id="myModal" class="modal">
+<div class="col-xs-12 horizontal-center">
+  <div id="myModal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <!-- <span class="close">&times;</span> -->
-    <p class="text-center" style="font-weight: bold;">thank you</p>
-    <p class="text-center">HANG TIGHT! WE’LL GET IN TOUCH WITH MORE DETAILS ON OUR LAUNCH. KNOW ANY OTHER BEAUTY BOSSES THAT MIGHT BENEFIT FROM BUILDING THEIR OWN SITE? REFER A FRIEND AND EARN CREDIT TOWARDS YOUR ACCOUNT.</p>
-    <div class="emails"><input placeholder="Friends Email" type="text"><br></div>
-    <i style="font-size: 28px; color: white;" class="fa fa-plus-square" aria-hidden="true"></i>
-  </div>
-
-</div>
-
-<div class="sign-up-form form-inline text-center">
-
-
-  <%= simple_form_for(Request.new) do |f| %>
-    <%= f.error_notification %>
-
-    <div class="form-group">
-      <input class="form-control string required sign-up-input" required="required" aria-required="true" placeholder="NAME" type="text" name="request[name]" id="request_name">
-      <input class="form-control string required sign-up-input" required="required" aria-required="true" placeholder="NAME" type="text" name="request[name]" id="request_name">
-
-      <%= f.button :submit, "REQUEST INVITE", class: "btn btn-primary sign-up-button" %>
+    <!-- Modal content -->
+    <div class="modal-content">
+      <!-- <span class="close">&times;</span> -->
+      <p class="text-center" style="font-weight: bold;">thank you</p>
+      <p class="text-center">HANG TIGHT! WE’LL GET IN TOUCH WITH MORE DETAILS ON OUR LAUNCH. KNOW ANY OTHER BEAUTY BOSSES THAT MIGHT BENEFIT FROM BUILDING THEIR OWN SITE? REFER A FRIEND AND EARN CREDIT TOWARDS YOUR ACCOUNT.</p>
+      <div class="emails"><input placeholder="Friends Email" type="text"><br></div>
+      <i style="font-size: 28px; color: white;" class="fa fa-plus-square" aria-hidden="true"></i>
     </div>
 
-  <% end %>
+  </div>
 
+  <div class="sign-up-form form-inline text-center">
+
+
+    <%= simple_form_for(Request.new) do |f| %>
+      <%= f.error_notification %>
+
+      <div class="form-group">
+        <input class="form-control string required sign-up-input" required="required" aria-required="true" placeholder="NAME" type="text" name="request[name]" id="request_name">
+
+        <input class="form-control string required sign-up-input" required="required" aria-required="true" placeholder="EMAIL" type="text" name="request[email]" id="request_email">
+      </div>
+
+      <div class="form-group">
+        <%= f.button :submit, "REQUEST INVITE", class: "btn btn-primary sign-up-button" %>
+      </div>
+
+    <% end %>
+
+  </div>
 </div>
-
 <%= content_for :modal do %>
   <script>
     $(document).ready(function(){

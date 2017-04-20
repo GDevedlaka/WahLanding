@@ -5,20 +5,13 @@
 
 
 .scroll-page{
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 
   background: url("wah_1.png");
   background-repeat: no-repeat;
   background-position: 0px 0px;
   background-size: cover;
-
-  .page-link {
-    text-decoration: none;
-    &:hover{
-      text-decoration: none;
-    }
-  }
 
 }
 
@@ -31,7 +24,12 @@
 }
 
 .title{
-  margin-top: 15vh;
+  margin-top: 150px;
+}
+
+.horizontal-center{
+  display: flex;
+  justify-content: center;
 }
 
 .brief{
@@ -53,12 +51,13 @@
 .sign-up-form{
   font-family: "Gotham";
   font-weight: bold;
-  margin-top: 5vh;
+  margin-top: 35px;
 
   input{
     border-radius: 0px;
     font-size: 12px;
-    height: 7vh;
+    height: 50px;
+    margin-top: 5px;
   }
 
   .sign-up-input{
@@ -67,11 +66,15 @@
   }
 
   .sign-up-button{
-    padding: 12px;
+    padding: 0px;
+    padding-top: 4px;
     color: black;
     font-family: "Gotham";
     font-weight: bold;
     font-size: 14px;
+
+    min-width: 150px;
+    max-width: 350px;
 
     &:link{
       color:black;

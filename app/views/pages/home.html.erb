@@ -18,47 +18,11 @@
         </p>
       </div>
 
-      <div class="col-xs-12">
-        <%= render 'sign-up-form' %>
-      </div>
+      <%= render 'sign-up-form' %>
 
     </div>
   </div>
 </div>
 
 <%= render 'nav-menu' %>
-
-<% content_for(:after_js) do %>
-<script>
-  $(document).ready(function(){
-
-      // var input = document.querySelectorAll('input');
-      // for(i=0; i<input.length; i++){
-      //   input[i].setAttribute('size',input[i].getAttribute('placeholder').length);
-      // }
-
-      var scrollSpeed = 500;
-
-      $(".hello-link").click(function() {
-        $('body').animate({
-          scrollTop: $("#hello").offset().top
-        }, scrollSpeed);
-      });
-
-      $(".about-link").click(function() {
-        $('body').animate({
-          scrollTop: $("#about").offset().top
-        }, scrollSpeed);
-      });
-
-      $(".join-the-crew-link").click(function() {
-        $('body').animate({
-          scrollTop: $("#join-the-crew").offset().top
-        }, scrollSpeed);
-      });
-
-    });
-
-  </script>
-  <% end %>
 
