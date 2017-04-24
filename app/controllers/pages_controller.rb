@@ -2,6 +2,6 @@ class PagesController < ApplicationController
   # skip_before_action :authenticate_user!, only: [ :home ]
 
   def home
-    # @request = Request.new
+    @request = Request.new
   end
 end

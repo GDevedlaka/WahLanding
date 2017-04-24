@@ -1,6 +1,12 @@
 class RequestsController < ApplicationController
+
+  def reference
+    @request = Request.new(request_params)
+  end
+
   def create
     @request = Request.create(request_params)
+    raise
     if @request.save
       # flash[:notice] = "Thank You! We'll be in touch!"
     else
@@ -13,6 +19,6 @@ class RequestsController < ApplicationController
   private
 
   def request_params
-    params.require(:request).permit(:name, :email, :insta_handle)
+    params.require(:request).permit(:name, :email, :insta_handle, :reference)
   end
 end
