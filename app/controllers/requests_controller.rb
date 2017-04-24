@@ -5,7 +5,7 @@ class RequestsController < ApplicationController
       # flash[:notice] = "Thank You! We'll be in touch!"
     else
       flash[:alert] = "Error! Please fill in al fields correctly!"
-      # redirect_to root_path
+      redirect_to root_path
     end
 
   end
