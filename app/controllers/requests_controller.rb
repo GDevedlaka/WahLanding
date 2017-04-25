@@ -27,6 +27,13 @@ class RequestsController < ApplicationController
       redirect_to root_path
     elsif @request.save
       # flash[:notice] = "Thank You! We'll be in touch!"
+
+      slack_message = "#{@request.name} has requested an invite at #{@request.email}."
+      if @request.reference.present?
+        slack_message += " They referred #{@request.reference}"
+      end
+      SLACK_NOTIFIER.ping(slack_message)
+
       redirect_to root_path
     else
       redirect_to root_path

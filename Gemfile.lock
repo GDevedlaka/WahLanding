@@ -195,6 +195,7 @@ GEM
     simple_form (3.4.0)
       actionpack (> 4, < 5.1)
       activemodel (> 4, < 5.1)
+    slack-notifier (2.1.0)
     slop (3.6.0)
     spring (2.0.1)
       activesupport (>= 4.2)
@@ -246,6 +247,7 @@ DEPENDENCIES
   remotipart!
   sass-rails
   simple_form
+  slack-notifier
   spring
   spring-watcher-listen (~> 2.0.0)
   uglifier
