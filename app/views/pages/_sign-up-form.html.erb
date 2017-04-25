@@ -7,7 +7,11 @@
       <p class="text-center" style="font-weight: bold;">thank you</p>
       <p class="text-center">HANG TIGHT! WE’LL GET IN TOUCH WITH MORE DETAILS ON OUR LAUNCH. KNOW ANY OTHER BEAUTY BOSSES THAT MIGHT BENEFIT FROM BUILDING THEIR OWN SITE? REFER A FRIEND AND EARN CREDIT TOWARDS YOUR ACCOUNT.</p>
       <div class="horizontal-center">
-        <input placeholder="Friends Email" type="text">
+        <%= simple_form_for(@request) do |f| %>
+
+          <%= f.input :reference, label: false, placeholder: "Friends Email" %>
+          <%= f.button :submit %>
+        <% end %>
 
       </div>
     </div>
@@ -17,12 +21,11 @@
   <div class="sign-up-form form-inline text-center">
 
 
-    <%= simple_form_for(Request.new) do |f| %>
+    <%= simple_form_for @request, url: "requests/reference", method: :post do |f| %>
       <%= f.error_notification %>
 
       <div class="form-group">
         <input class="form-control string required sign-up-input" required="required" aria-required="true" placeholder="NAME" type="text" name="request[name]" id="request_name">
-
         <input class="form-control string required sign-up-input" required="required" aria-required="true" placeholder="EMAIL" type="text" name="request[email]" id="request_email">
       </div>
 
