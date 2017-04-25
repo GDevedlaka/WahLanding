@@ -1,1 +1,1 @@
-SLACK_NOTIFIER = Slack::Notifier.new(ENV(slack))
+SLACK_NOTIFIER = Slack::Notifier.new(ENV['slack'])
