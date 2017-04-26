@@ -9,14 +9,14 @@ class RequestsController < ApplicationController
     elsif Request.where(email: @request.email).count > 0 # Email must be unique
       flash[:alert] = "#{@request.email} has already registered!"
       redirect_to root_path
-    end
-
-    if @request.save
-      session[:email] = @request.email
-      SLACK_NOTIFIER.ping("#{@request.name} has requested an invite at #{@request.email}.")
     else
-      flash[:alet] = "Something went wrong! We're sorry!"
-      redirect_to root_path
+      if @request.save
+        session[:email] = @request.email
+        SLACK_NOTIFIER.ping("#{@request.name} has requested an invite at #{@request.email}.")
+      else
+        flash[:alet] = "Something went wrong! We're sorry!"
+        redirect_to root_path
+      end
     end
   end
 
@@ -33,7 +33,7 @@ class RequestsController < ApplicationController
       @request.reference = request_params[:reference]
 
       if @request.save
-        SLACK_NOTIFIER.ping("#{@request.email} referred #{@request.reference}")
+        SLACK_NOTIFIER.ping("#{@request.email} referred #{@request.reference}") if @request.reference.present?
       else
         flash[:alert] = "Something went wrong! We're Sorry!"
         redirect_to root_path
