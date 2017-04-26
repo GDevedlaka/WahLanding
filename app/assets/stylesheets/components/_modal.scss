@@ -1,38 +1,77 @@
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal-content {
+  color: black;
+  background-color: $green;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 60px;
+  width: 600px; /* Could be more or less, depending on screen size */
+  min-height: 350px;
+  height: auto;
+
+  #cancel{
+    cursor: pointer;
+  }
+
+  #close-modal{
+    bottom: 0px;
+  }
+
+  p.modal-header{
+    font-family: "Archivo Black";
+    font-size: 20px;
+  }
+
+  .modal-text{
     font-family: "Montserrat";
-    background-color: rgba(0, 239, 85, 1);
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 60px;
-    width: 350px; /* Could be more or less, depending on screen size */
-    min-height: 350px;
-    height: auto;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .reference-input{
+    width: 350px;
+    font-family: "Archivo Black";
+    font-size: 12px;
+  }
+
+  .transparent{
+    background: transparent;
+    border: 0;
+  }
+}
+
+.no-decoration{
+  text-decoration: none;
+  color: #000;
+  &:hover{
+    text-decoration: none;
+    color: #000;
+  }
 }
 
 /* The Close Button */
 .close {
-    color: #000;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover, .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
