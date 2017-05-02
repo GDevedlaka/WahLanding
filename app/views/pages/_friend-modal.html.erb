@@ -1,43 +1,43 @@
 <div id="myModal" class="modal">
 
-    <!-- Modal content -->
-    <div class="modal-content">
+  <!-- Modal content -->
+  <div class="modal-content">
 
-      <p class="text-center modal-text">
-        HANG TIGHT HOMIE!
-      </p>
-      <p class="text-center modal-header">
-        We'll get in touch very soon with more details on our launch!
-      </p>
-      <p class="text-center modal-text">
-        KNOW ANY OTHER BEAUTY BOSSES IN NEED OF A SITE BUILD? <br>
-        THEN SPREAD THE LOVE!
-      </p>
-      <div class="horizontal-center form-inline">
-        <%= simple_form_for(@request) do |f| %>
+    <p class="text-center modal-text">
+      HANG TIGHT HOMIE!
+    </p>
+    <p class="text-center modal-header">
+      We'll get in touch very soon with more details on our launch!
+    </p>
+    <p class="text-center modal-text">
+      KNOW ANY OTHER BEAUTY BOSSES IN NEED OF A SITE BUILD? <br>
+      THEN SPREAD THE LOVE!
+    </p>
+    <div class="horizontal-center form-inline">
+      <%= simple_form_for(@request) do |f| %>
 
-          <!-- <%# f.input :reference, label: false, placeholder: "Friends Email" %> -->
-          <div class="form-group">
-            <input type="text" class="form-control string optional reference-input" placeholder="FRIENDS EMAIL" name="request[reference]" id="request_reference">
-          </div>
-          <!-- <%# f.button :submit %> -->
-          <div class="form-group">
-            <button class="transparent" type="submit" name="commit" id="tick">
-              <%= image_tag("tick.png") %>
-            </button>
-          </div>
-
-        <% end %>
-
+      <!-- <%# f.input :reference, label: false, placeholder: "Friends Email" %> -->
+      <div class="form-group">
+        <input type="text" class="form-control string optional reference-input" placeholder="FRIENDS EMAIL" name="request[reference]" id="request_reference">
       </div>
-      <div class="text-center">
-        <p class='modal-text' style='font-size: 11px;' id='close-modal'>
-          <a href="/" class="no-decoration">
-            NOT NOW THANKS
-          </a>
-        </p>
+      <!-- <%# f.button :submit %> -->
+      <div class="form-group">
+        <button class="transparent" type="submit" name="commit" id="tick">
+          <%= image_tag("tick.png") %>
+        </button>
       </div>
 
+      <% end %>
+
+    </div>
+    <div class="text-center">
+      <p class='modal-text' style='font-size: 11px;' id='close-modal'>
+        <a href="/" class="no-decoration">
+          NOT NOW THANKS
+        </a>
+      </p>
     </div>
 
   </div>
+
+</div>
