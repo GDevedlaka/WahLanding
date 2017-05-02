@@ -1,5 +1,6 @@
 <div class="scroll-page" id="hello">
   <div class="container">
+
     <div class="row">
 
       <div class="col-xs-4 col-xs-offset-4 text-center title">
@@ -20,23 +21,31 @@
 
       <%= render 'sign-up-form' %>
 
-      <div class="col-xs-2 col-xs-offset-5 text-center icons">
-
-        <div class="col-xs-6 twitter">
-          <a href="https://twitter.com/intent/tweet?text=I%20can&#39;t%20wait%20for%20@beautystack%20to%20launch!%20Sign%20up%20for%20the%20waitlist%20now%20beautystack.co" class="" data-show-count="false">
-            <%= image_tag("twitter.png", class: "twitter-icon") %>
-          </a>
-        </div>
-
-        <div class="col-xs-6 contact">
-          <a href="mailto:shar@wah-london.com?Subject=I want to know more about BeautyStack" target="_top">
-            <%= image_tag("contact.png", class: "contact-icon") %>
-          </a>
-        </div>
-
       </div>
 
-    </div>
+      <div class="row" style="margin-top: 80px;">
+        <div class="col-xs-4 col-xs-offset-4 text-center icons">
+
+            <div class="col-xs-6 twitter">
+              <a href="https://twitter.com/intent/tweet?text=I%20can&#39;t%20wait%20for%20@beautystack%20to%20launch!%20Sign%20up%20for%20the%20waitlist%20now%20beautystack.co" class="" data-show-count="false">
+                <%= image_tag("twitter.png", class: "twitter-icon") %>
+              </a>
+            </div>
+            <div class="col-xs-6 contact">
+              <a href="mailto:shar@wah-london.com?Subject=I want to know more about BeautyStack" target="_top">
+                <%= image_tag("contact.png", class: "contact-icon") %>
+              </a>
+            </div>
+
+          <!-- <div class="col-xs-6 contact">
+            <a href="mailto:shar@wah-london.com?Subject=I want to know more about BeautyStack" target="_top">
+              <%# image_tag("contact.png", class: "contact-icon") %>
+            </a>
+          </div> -->
+
+        </div>
+      </div>
+
   </div>
 </div>
 
